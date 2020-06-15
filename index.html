@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Simulador de Pense Bem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h1 id="titulo">Cálculo IMC</h1>
+        <form name="imcForm" id="imcForm" action="#">
+            <p>
+                Peso <input type="text" name="peso" required>
+                Altura <input type="text" name="altura"required>
+            </p>
+            <p>
+                IMC <input type="text" name="imc" value="" size="35" readonly>
+                Avaliação <input type="text" name="situacao" value="" size="35" readonly>
+            </p>
+
+            <p><input type="button" value="Calcular IMC" onclick="calcular(); "></p>
+        </form>
+    </div>
+</body>
+
+</html>
