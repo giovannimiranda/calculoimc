@@ -5,8 +5,10 @@ function calcular() {
     var imc = peso / (altura * altura);
 
     formulario.imc.value = imc.toFixed(2);
-
-    if (imc < 17)
+    
+    if (isNaN(imc))
+        formulario.situacao.value = "Dados inválidos";
+    else if (imc < 17)
         formulario.situacao.value = "Você se encontra muito abaixo do peso.";
     else if (imc >= 17 && imc < 18.49)
         formulario.situacao.value = "Você se encontra abaixo do peso.";
